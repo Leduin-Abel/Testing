@@ -4,5 +4,7 @@ it('Sending requests', () => {
 
   cy
     .visit('/')
+    
+
 
 });

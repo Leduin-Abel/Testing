@@ -3,10 +3,10 @@
 it('Intercept requests', () => {
 
   cy
-    .intercept({
+    .intercept({  //intercepta comandos/requests
       method: 'POST',
       url: '/api/boards'
-    }).as('createBoard')
+    }).as('createBoard')  // nombra el comando con un alias 
 
   cy
     .visit('/')
@@ -20,7 +20,7 @@ it('Intercept requests', () => {
     .type('launching a rocket{enter}')
 
   cy
-    .wait('@createBoard')
+    .wait('@createBoard') //espera a que el comando se de
     .then( (board) => {
       expect(board.response.statusCode).to.eq(201)
       expect(board.request.body.name).to.eq('launching a rocket')

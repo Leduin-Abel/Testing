@@ -2,6 +2,7 @@
 
 beforeEach(() => {
 
+  //se pueden enviar request utilizando esta forma a la aplicacion
   cy.request({
     method: 'POST',
     url: '/api/reset'
