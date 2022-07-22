@@ -3,11 +3,13 @@
 beforeEach(() => {
 
   cy
-    .visit('/board/2305140181')
+    .visit('/board/89872140596')
 })
 
 it('Multiple assertions', () => {
 
+//El comando then no tiene la logica del re intento, si se desea, se debe cambiar a should 
+//Then es para assertions para arreglos
   cy
     .get('[data-cy=task]')
     .eq(0)

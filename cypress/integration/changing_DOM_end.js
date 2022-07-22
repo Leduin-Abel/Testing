@@ -11,7 +11,7 @@ it('Changing the DOM', () => {
 
   cy
     .get('[data-cy="board-item"]')
-    .trigger('mouseover')
+    .trigger('mouseover') //dispara el eventlistener
 
   cy
     .get('[data-cy=star]')
