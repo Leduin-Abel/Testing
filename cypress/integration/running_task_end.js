@@ -3,7 +3,8 @@
 it('Running task', () => {
 
   cy
-    .task('setupDb', {
+    .task('setupDb', { //Crea la tarea de organizar la base de datos
+      // se complementa con el index y el setupDb de plugins
       boards: [{
         name: 'board created with .task()',
         id: 1,

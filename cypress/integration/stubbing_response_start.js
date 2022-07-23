@@ -8,6 +8,7 @@ it('Stubbing response', () => {
       url: '/api/boards'
     }).as('boardList')
 
+    //"forceNetworkError:true" fuerza un error de red
   cy
     .visit('/')
 
